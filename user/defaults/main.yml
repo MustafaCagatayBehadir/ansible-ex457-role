@@ -1,0 +1,6 @@
+---
+ios_username: ios_admin
+eos_username: eos_admin
+junos_username: junos_admin
+vyos_username: vyos_admin
+vyos_password: vyos_password

@@ -1,0 +1,6 @@
+---
+- name: Configure IOSv User
+  cisco.ios.ios_user:
+    name: "{{ username | ios_username }}"
+    nopassword: true
+    sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"

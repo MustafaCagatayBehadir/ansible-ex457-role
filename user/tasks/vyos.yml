@@ -1,0 +1,5 @@
+---
+- name: Create VyOS User
+  vyos.vyos.vyos_user:
+    name: "{{ username | vyos_username }}"
+    configured_password: "{{ password | vyos_password }}"

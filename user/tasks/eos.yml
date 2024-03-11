@@ -1,0 +1,5 @@
+---
+- name: Configure EOSv User
+  arista.eos.eos_user:
+    name: "{{ username | eos_username }}"
+    sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"

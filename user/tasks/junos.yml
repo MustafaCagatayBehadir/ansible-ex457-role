@@ -1,0 +1,6 @@
+---
+- name: create Junos user account
+  junipernetworks.junos.junos_user:
+    name: "{{ username | junos_username }}"
+    role: super-user
+    sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
