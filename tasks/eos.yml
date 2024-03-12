@@ -2,6 +2,7 @@
 - name: Create EOSv User
   arista.eos.eos_user:
     name: "{{ username | default(eos_username) }}"
+    nopassword: true
 
 - name: Configure EOSv User sshkey
   arista.eos.eos_user:
