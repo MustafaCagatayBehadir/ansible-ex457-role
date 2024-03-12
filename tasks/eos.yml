@@ -2,10 +2,8 @@
 - name: Create EOSv User
   arista.eos.eos_user:
     name: "{{ username | default(eos_username) }}"
-    state: present
 
 - name: Configure EOSv User sshkey
   arista.eos.eos_user:
     name: "{{ username | default(eos_username) }}"
     sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
-    state: present
